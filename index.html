@@ -1,7 +1,114 @@
-<html>
-    <body>
-        <p>
-            hello how are you
-        </p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gatik Kumar | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    nav {
+      width: 100%;
+      padding: 1rem 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.6);
+      position: fixed;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 300;
+    }
+
+    nav a:hover {
+      color: #00ffe0;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 4rem;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      animation: fadeIn 2s ease;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      color: #c7c7c7;
+      animation: fadeIn 3s ease;
+    }
+
+    .scroll-down {
+      margin-top: 4rem;
+      animation: bounce 2s infinite;
+      font-size: 1.2rem;
+      opacity: 0.7;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Gatik Kumar</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#accomplishments">Accomplishments</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h1>Hi, I'm Gatik</h1>
+    <p>A creator. A coder. A physics lover.</p>
+    <div class="scroll-down">↓ Scroll to explore</div>
+  </section>
+</body>
 </html>

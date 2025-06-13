@@ -6,7 +6,7 @@
   height: 1.875em;
 }
 
-.toggle-container {
+.toggle-input {
   appearance: none;
   margin: 0;
   position: absolute;
@@ -29,7 +29,7 @@
   transition: fill .4s;
 }
 
-.toggle-container:hover .toggle .toggle-background {
+.toggle-wrapper:hover .toggle .toggle-background {
   fill: var(--active-color);
 }
 
@@ -38,7 +38,7 @@
   transition: transform .6s;
 }
 
-.toggle-container:hover .toggle .toggle-circle-center {
+.toggle-wrapper:hover .toggle .toggle-circle-center {
   transform: translateX(150px);
 }
 
@@ -52,7 +52,7 @@
   transform: scale(1);
 }
 
-.toggle-container:hover .toggle .toggle-circle.left {
+.toggle-wrapper:hover .toggle .toggle-circle.left {
   transform: scale(0);
 }
 
@@ -60,7 +60,7 @@
   transform: scale(0);
 }
 
-.toggle-container:hover .toggle .toggle-circle.right {
+.toggle-wrapper:hover .toggle .toggle-circle.right {
   transform: scale(1);
 }
 
@@ -72,7 +72,7 @@
   fill: var(--inactive-color);
 }
 
-.toggle-container:hover .toggle .toggle-icon.on {
+.toggle-wrapper:hover .toggle .toggle-icon.on {
   fill: #fff;
 }
 
@@ -80,6 +80,6 @@
   fill: #eaeaec;
 }
 
-.toggle-container:hover .toggle .toggle-icon.off {
+.toggle-wrapper:hover .toggle .toggle-icon.off {
   fill: var(--active-color);
 }

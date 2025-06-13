@@ -1,21 +1,15 @@
-.toggle-container {
-  --active-color: #1868e3;
-  --inactive-color: #d3d3d6;
+.toggle-wrapper {
   position: relative;
+  height: 2.5em;
   aspect-ratio: 292 / 142;
-  height: 1.875em;
 }
 
-.toggle-input {
-  appearance: none;
-  margin: 0;
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
+.toggle-container {
+  position: relative;
   height: 100%;
-  cursor: pointer;
+  width: 100%;
+  --active-color: #1868e3;
+  --inactive-color: #d3d3d6;
 }
 
 .toggle {
@@ -26,25 +20,25 @@
 
 .toggle-background {
   fill: var(--inactive-color);
-  transition: fill .4s;
+  transition: fill 0.4s;
 }
 
-.toggle-wrapper:hover .toggle .toggle-background {
+.toggle-wrapper:hover .toggle-background {
   fill: var(--active-color);
 }
 
 .toggle-circle-center {
   transform-origin: center;
-  transition: transform .6s;
+  transition: transform 0.6s;
 }
 
-.toggle-wrapper:hover .toggle .toggle-circle-center {
+.toggle-wrapper:hover .toggle-circle-center {
   transform: translateX(150px);
 }
 
 .toggle-circle {
   transform-origin: center;
-  transition: transform .45s;
+  transition: transform 0.45s;
   backface-visibility: hidden;
 }
 
@@ -52,7 +46,7 @@
   transform: scale(1);
 }
 
-.toggle-wrapper:hover .toggle .toggle-circle.left {
+.toggle-wrapper:hover .toggle-circle.left {
   transform: scale(0);
 }
 
@@ -60,19 +54,19 @@
   transform: scale(0);
 }
 
-.toggle-wrapper:hover .toggle .toggle-circle.right {
+.toggle-wrapper:hover .toggle-circle.right {
   transform: scale(1);
 }
 
 .toggle-icon {
-  transition: fill .4s;
+  transition: fill 0.4s;
 }
 
 .toggle-icon.on {
   fill: var(--inactive-color);
 }
 
-.toggle-wrapper:hover .toggle .toggle-icon.on {
+.toggle-wrapper:hover .toggle-icon.on {
   fill: #fff;
 }
 
@@ -80,6 +74,6 @@
   fill: #eaeaec;
 }
 
-.toggle-wrapper:hover .toggle .toggle-icon.off {
+.toggle-wrapper:hover .toggle-icon.off {
   fill: var(--active-color);
 }
